@@ -20,3 +20,4 @@ six
 urllib3
 boto3
 tweepy
+yfinance
