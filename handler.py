@@ -23,6 +23,9 @@ from notifiers import twitter
 import json
 import logging
 
+import yfinance as yf
+yf.pdr_override()
+
 # settins for logging
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
@@ -61,9 +64,9 @@ def generate_csv_with_datareader():
     """
     # 価格推移の開始日を指定(6ヶ月を指定)
     start_date = today - relativedelta(months=6)
-
+    end_date = today + relativedelta(days=1)
     # yahoofinanceのライブラリ経由でAPIを叩く(currency_codeは環境変数で通貨ペアコードを指定)
-    df = data.DataReader(currency_code, 'yahoo', start_date, today)
+    df = data.DataReader(currency_code, 'yahoo', start=start_date, end=end_date)
     df = df[['High', 'Low', 'Open', 'Close']]
     df.tail()
 
