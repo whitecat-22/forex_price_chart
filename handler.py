@@ -12,9 +12,9 @@ import csv
 import datetime
 import os
 from os.path import join, dirname
-import pandas as pd
 import mplfinance as mpf
-import pandas_datareader as data
+from pandas_datareader import data
+import pandas as pd
 from dotenv import load_dotenv
 from dateutil.relativedelta import relativedelta
 
@@ -66,7 +66,8 @@ def generate_csv_with_datareader():
     start_date = today - relativedelta(months=6)
     end_date = today + relativedelta(days=1)
     # yahoofinanceのライブラリ経由でAPIを叩く(currency_codeは環境変数で通貨ペアコードを指定)
-    df = data.DataReader(currency_code, 'yahoo', start=start_date, end=end_date)
+    #df = data.DataReader(currency_code, 'yahoo', start_date, today)
+    df = data.get_data_yahoo(currency_code, start=start_date, end=end_date)
     df = df[['High', 'Low', 'Open', 'Close']]
     df.tail()
 
