@@ -12,6 +12,6 @@
 
 　
 
-- twitterへの投稿結果
+- twitterへの投稿結果：
 
 ![https://github.com/whitecat-22/forex_price_chart/blob/main/twitter_20210610.PNG](https://github.com/whitecat-22/forex_price_chart/blob/main/twitter_20210610.PNG)
