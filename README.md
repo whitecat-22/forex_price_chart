@@ -2,7 +2,7 @@
 
 ### 為替情報(USD/JPY)を翌朝6:00(JST)にTwitterへ投稿する
 
-- Lambda : Runtime = Python 3.8 / [ServerlessFramework](https://app.serverless.com/)
+- Lambda : Runtime = [Python](https://www.python.org/) 3.8 / [ServerlessFramework](https://app.serverless.com/)
 - EventBridge : cron(0 21 ? * MON-FRI *)
 - CloudWatchLogs
 
