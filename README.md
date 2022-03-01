@@ -8,7 +8,7 @@
 - [EventBridge](https://aws.amazon.com/jp/eventbridge/?nc2=h_ql_prod_serv_eb) : cron(0 21 ? * MON-FRI *)
 - [CloudWatchLogs](https://aws.amazon.com/jp/cloudwatch/?nc2=h_ql_prod_mg_cw)
 
-※twitterへの投稿には、twitter API および、tweepyを利用しています。
+※twitterへの投稿には、twitter API および、[tweepy](https://www.tweepy.org/)を利用しています。
 
 　
 
