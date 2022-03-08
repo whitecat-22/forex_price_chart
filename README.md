@@ -5,10 +5,10 @@
 
 ◆使用技術：
 
-AWS(Amazon Web Services)
-- [Lambda](https://aws.amazon.com/jp/lambda/?nc2=h_ql_prod_fs_lbd) : Runtime = [Python](https://www.python.org/) 3.8 / [ServerlessFramework](https://app.serverless.com/)
-- [EventBridge](https://aws.amazon.com/jp/eventbridge/?nc2=h_ql_prod_serv_eb) : cron(0 21 ? * MON-FRI *)　　※[【Linux】【AWS Lambda】Cron形式の設定マニュアル](https://qiita.com/_whitecat_22/items/20987f265b97ec3fbacf)
-- [CloudWatchLogs](https://aws.amazon.com/jp/cloudwatch/?nc2=h_ql_prod_mg_cw)
+- AWS(Amazon Web Services)
+ - [Lambda](https://aws.amazon.com/jp/lambda/?nc2=h_ql_prod_fs_lbd) : Runtime = [Python](https://www.python.org/) 3.8 / [ServerlessFramework](https://app.serverless.com/)
+ - [EventBridge](https://aws.amazon.com/jp/eventbridge/?nc2=h_ql_prod_serv_eb) : cron(0 21 ? * MON-FRI *)　　※[【Linux】【AWS Lambda】Cron形式の設定マニュアル](https://qiita.com/_whitecat_22/items/20987f265b97ec3fbacf)
+ - [CloudWatchLogs](https://aws.amazon.com/jp/cloudwatch/?nc2=h_ql_prod_mg_cw)
 
 ※twitterへの投稿には、[twitter API](https://developer.twitter.com/en/docs/twitter-api) および、[tweepy](https://www.tweepy.org/)を利用しています。
 
